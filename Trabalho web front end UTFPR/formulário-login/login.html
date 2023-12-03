@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de login</title>
+  <link rel="stylesheet" href="/formulário-login/csslogin/login.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+    <form method="post" action="#">
+     
+      <h1>Cadastrar</h1>
+      <div id="msg-Error"></div>
+      <div id="msg-Sucess"></div>
+      
+      <label id="labelNome" for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br>
+      
+      <label id="labelSobreNome" for="sobrenome">Sobrenome:</label>
+      <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome" required><br>
+      
+      <label id="labelCidade" for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required><br>
+      
+      <label id="labelEstado"  for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" placeholder="Seu estado" required><br>
+      
+      <label id="labelEmail" for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Seu email" required><br>
+       
+      <label id="labelSenha" for="senha">Senha:</label>
+      <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+      <input type="password" id="senha" name="senha" placeholder="* * * * * *" required><br><br>
+
+      
+      <input onclick="fazerLogin()" id="submit" type="button" value="Enviar">
+    </form>
+    
+
+   
+    <button onclick="abrirPaginaVisualizar()">Visualizar Lista</button>
+   
+
+
+<!-- Mensagens de sucesso/erro -->
+<div id="msgSucesso" style="display: none;"></div>
+<div id="msgErro" style="display: none;"></div>
+
+
+
+
+    
+  <script src="/js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,193 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(45deg,pink,blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+  overflow-x: auto;
+}
+
+form{
+  background-color:rgba(0,0,0,0.8);
+  padding: 80px;
+  border-radius: 10px;
+  color: #fff;
+  width: 30%; 
+  margin: 20px auto;
+  order: 1; 
+
+}
+
+.fa-eye{
+  
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  cursor: pointer;
+  color: #00bb00;
+}
+
+
+ul#lista-dados {
+
+  list-style-type: none;
+  margin-top: 50px;
+  padding: 0;
+  width: 50%;
+  max-height: 1000px;
+  border: 2px solid black;
+  overflow-y: auto;
+  position: fixed;
+  bottom: 0;
+  left: 25%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  order: 2; /* Ordem da lista */
+}
+
+input{
+  width: 89%;
+  color: blue;
+  padding: 15px;
+  /* border: none; */
+  outline: none;
+  font-size: 1em;
+}
+
+#submit{
+  align-items: center;
+  background-color: blue;
+  color: #fff;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#submit:hover{
+  background-color: rgb(95, 90, 201);
+  color: antiquewhite;
+}
+
+ul#lista-dados {
+  list-style-type: none;
+  padding: 0;
+  width: 50%; /* Ajuste a largura conforme necessário */
+  max-height: 1000px;
+  border: 2px solid black;
+  overflow-y: auto;
+  position: fixed;
+  bottom: 0;
+  left: 25%; /* Centraliza a lista */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  
+}
+
+#msg-Error{
+text-align: center;
+color: #ff0000;
+background-color:#ffbbbb ;
+padding: 10px;
+border-radius: 4px;
+display: none;
+}
+
+#msg-Sucess{
+text-align: center;
+color:#00bb00;
+background-color:#bbffbe;
+padding: 10px;
+border-radius: 4px;
+display: none;
+
+}
+
+/* Estilo para os botões */
+button {
+  margin: 5px;
+  padding: 10px;
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para a lista */
+#lista-dados {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* #lista-dados li {
+  margin: 5px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+} */ 
+
+/* Estilo para mensagens de sucesso/erro */
+#msgSucesso, #msgErro {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#msgSucesso {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white;
+}
+
+#msgErro {
+  background-color: #f44336; /* Cor de fundo vermelho */
+  color: white;
+}
+
+/* Estilo para o botão de visualizar */
+#btnVisualizar {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #2196F3; /* Cor de fundo azul */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Adicione este bloco ao seu arquivo de estilo CSS */
+
+.autocompletar-lista {
+  position: absolute;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.autocompletar-item {
+  position: absolute;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.autocompletar-item:hover {
+  background-color: #f0f0f0;
+}
+
+span#btnPesquisar{
+  background-color: #00bb00;
+  padding: 5PX;
+  width: 8%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#campoPesquisa {
+  margin-bottom: 10px;
+}
